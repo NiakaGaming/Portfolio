@@ -5,35 +5,39 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth !important;
 }
 
 /* ------ */
 /* NAVBAR */
 /* ------ */
 
+nav {
+    position: fixed;
+    width: 100%;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: #333;
     display: flex;
     justify-content: center;
 }
 
-nav li {
-    float: left;
-}
-
 nav li a {
     display: block;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
+    /* padding: 14px 16px; */
+    padding: 2vh 0.75vw;
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 nav li a:hover {
     background-color: #04AA6D;
 }
@@ -41,3 +45,24 @@ nav li a:hover {
 /* ------- */
 /* SECTION */
 /* ------- */
+
+#textoz>img {
+    width: 100%;
+    height: auto;
+}
+
+
+#jump_around {
+    height: 100vh;
+    background-color: green;
+}
+
+#fivem {
+    height: 100vh;
+    background-color: blue;
+}
+
+#molengeek {
+    height: 100vh;
+    background-color: green;
+}
