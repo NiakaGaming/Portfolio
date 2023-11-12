@@ -19,6 +19,7 @@ html {
 nav {
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
 
 nav ul {
@@ -45,16 +46,29 @@ nav li a:hover {
 /* ------- */
 /* SECTION */
 /* ------- */
+section {
+    border: 1px solid black;
+    scroll-margin-top: 60px;
+}
 
 #textoz>img {
     width: 100%;
     height: auto;
 }
 
-
 #jump_around {
-    height: 100vh;
-    background-color: green;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#jump_around video {
+    z-index: 1;
+}
+
+#jump_around .explain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #fivem {
